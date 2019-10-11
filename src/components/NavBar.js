@@ -8,31 +8,33 @@ export default class NavBar extends Component {
     render() {
         return (
             <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
-                <Link to='/'>
-                    <img src={logo} alt="store" className="navbar-brand"/>
-                </Link>
-                <ul className="navbar-nav align-items-center">
-                    <li className="nav-item ml-5">
-                        <Link to="/" className="nav-link">
-                            products
-                        </Link>
-                    </li>
-                </ul>
-                <Link to='/cart' className="ml-auto">
+                <Link to='/cart' className="ml-0">
                     <ButtonContainer>
                         <span className="mr-2">
                             <i className="fas fa-cart-plus"></i>
                         </span>
-                        my cart
+                        سبد خرید
                     </ButtonContainer>
                 </Link>
+                <Link to='/'>
+                    <img src={logo} alt="store" className="navbar-brand mr-5"/>
+                </Link>
+                <ul className="navbar-nav align-items-center">
+                    <li className="nav-item ml-5">
+                        <Link to="/" className="nav-link">
+                            محصولات
+                        </Link>
+                    </li>
+                </ul>
+                
             </NavWrapper>
         )
     }
 }
 
 const NavWrapper = styled.nav`
-    background: var(--mainBlue);
+    background: rgb(232, 152, 14) !important;
+    /* background: var(--mainBlue); */
     .nav-link{
         color: var(--mainWhite) !important;
         font-size: 1.3rem;

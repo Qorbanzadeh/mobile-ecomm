@@ -12,11 +12,11 @@ export default function CartItem({item, value}) {
                 <img src={img} alt="product" style={{width:'5rem', height:'5rem'}} className="img-fluid"/>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <span className="d-lg-none">product : </span>
+                <span className="d-lg-none">محصول : </span>
                 {title}
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <span className="d-lg-none">price : </span>
+                <span className="d-lg-none">قیمت : </span>
                 {price}
             </div>
             <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
@@ -35,7 +35,7 @@ export default function CartItem({item, value}) {
                 </div>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <strong>item total : $ {total}</strong>
+                <strong>مجموع محصول : {total} تومان</strong>
             </div>
         </div>
     )

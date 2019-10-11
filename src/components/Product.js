@@ -23,7 +23,7 @@ export default class Product extends Component {
                         }}>
                         {inCart ? (
                             <p className="text-capitalize mb-0" disabled>
-                                in cart
+                                اضافه شده
                             </p>
                         ) :(
                             <i className="fas fa-cart-plus"></i>
@@ -38,8 +38,8 @@ export default class Product extends Component {
                             {title}
                         </p>
                         <h5 className="text-blue font-italic mb-0">
-                            <span className="mr-1">$</span>
                             {price}
+                            <span className="mr-1">تومان</span>
                         </h5>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ const ProductWrapper = styled.div`
     bottom: 0;
     right: 0;
     padding: 0.2rem 0.4rem;
-    background: var(--lightBlue);
+    background: rgb(232, 152, 14) !important;
     border: none;
     color: var(--mainWhite);
     font-size: 1.4rem;
@@ -109,7 +109,8 @@ const ProductWrapper = styled.div`
 }
 
 .cart-btn:hover{
-    color: var(--mainBlue);
+    color: rgb(223, 227, 14) !important;
+    /* color: var(--mainBlue); */
     cursor: pointer;
 }
 
